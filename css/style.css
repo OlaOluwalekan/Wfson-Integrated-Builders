@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainBlue: #0404b9;
+  --mainWhite: #fff;
+}
+
+.nav-bar {
+  background-color: var(--mainBlue);
+  color: var(--mainWhite);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 3px;
+  font-size: 30px;
+  font-weight: 900;
+}
