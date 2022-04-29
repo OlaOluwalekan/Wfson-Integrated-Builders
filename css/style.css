@@ -5,20 +5,94 @@
 }
 
 :root {
+  /* blue colors */
   --mainBlue: #0404b9;
+  --darkBlue: #040469;
+  --lightBlue: #5d5dfc93;
+
+  /* white color */
   --mainWhite: #fff;
+
+  /* pink colors */
+  --mainPink: #f349e5;
+
+  /* cream colors */
+  --mainCream: #fff06a;
 }
 
+/* Header and navigation styles */
+
+.header-nav-container {
+  width: 290px;
+  position: relative;
+  left: -250px;
+}
+
+/* Nav bar to open and close navigation in smaller screens */
 .nav-bar {
-  background-color: var(--mainBlue);
+  background-color: var(--mainPink);
   color: var(--mainWhite);
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  border-radius: 3px;
+  /* margin: 5px; */
+  border-radius: 0 8px 8px 0;
   font-size: 30px;
   font-weight: 900;
+  position: fixed;
+  left: 0px;
 }
+
+#navBarClose {
+  opacity: 0;
+  left: -40px;
+}
+/* End of nav bar */
+
+/* navigation for smaller screen */
+header {
+  background: var(--mainBlue);
+  width: 250px;
+  height: 100vh;
+}
+
+.site-name {
+  color: var(--mainCream);
+  font-size: 15px;
+  line-height: 40px;
+  background: var(--mainPink);
+}
+/* end of navigation for smaller screen */
+
+/* List items styles */
+ul li {
+  line-height: 50px;
+  border-top: 2px solid var(--lightBlue);
+  border-bottom: 1px solid var(--darkBlue);
+  /* padding-left: 30px; */
+}
+
+ul li a {
+  color: var(--mainCream);
+  text-decoration: none;
+  display: block;
+  padding-left: 30px;
+  font-weight: 900;
+}
+
+ul li a :first-child {
+  margin-right: 20px;
+}
+
+ul li a:hover {
+  background: var(--mainCream);
+  color: var(--mainBlue);
+  padding-left: 40px;
+  transition: all 0.5s ease;
+}
+/* End of list items styles */
+
+/* End of Header and navigation styles */
+
