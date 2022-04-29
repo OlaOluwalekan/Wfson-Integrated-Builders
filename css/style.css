@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 * {
   padding: 0;
   margin: 0;
@@ -19,11 +20,16 @@
   /* cream colors */
   --mainCream: #fff06a;
 }
+/* END OF GLOBAL STYLES */
 
 /* Header and navigation styles */
+.main-container {
+  background: green;
+  width: 90vw;
+}
 
 .header-nav-container {
-  width: 290px;
+  width: 250px;
   position: relative;
   left: -250px;
 }
@@ -37,7 +43,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 5px; */
   border-radius: 0 8px 8px 0;
   font-size: 30px;
   font-weight: 900;
@@ -95,4 +100,84 @@ ul li a:hover {
 /* End of list items styles */
 
 /* End of Header and navigation styles */
+
+
+
+/* Desktop screen styles for navigation */
+
+@media screen and (min-width: 800px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .header-nav-container {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  .site-name {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 0 10px 10px 0;
+    font-size: 15px;
+  }
+
+  .menu-items-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 30px;
+  }
+
+  ul li {
+    border: none;
+    border-bottom: 2px solid var(--mainCream);
+    padding: 20px 0 0 0;
+  }
+
+  ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0px;
+    width: 100px;
+    /* text-align: center; */
+  }
+
+  ul li a :first-child {
+    margin: 0;
+  }
+
+  ul li a:hover {
+    padding: 10px;
+    transform: scale(1.1);
+  }
+}
+
+/* End of desktop screen for navigation */
 
